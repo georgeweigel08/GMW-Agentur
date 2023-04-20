@@ -252,8 +252,8 @@ body {
   background-image: url("../images/hero-bg-bottom1\ \(2\).png"),
                     var(--gradient-1);
   background-repeat: no-repeat, no-repeat, no-repeat;
-  background-position: -230px bottom, center, center;
-  background-size: auto, cover, auto;
+  background-position: -140px bottom, center, center;
+  background-size: 140%, cover, auto;
   padding-block-start: 60px;
   padding-block-end: var(--section-padding);
 }
@@ -999,4 +999,10 @@ section h1 {
 
   .footer-brand { grid-column: auto; }
 
+}
+
+@media (min-height: 900px) {
+  .demo a {
+    bottom: 220px;
+  }
 }
