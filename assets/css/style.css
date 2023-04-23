@@ -695,11 +695,90 @@ section h1 {
 }
 
 
-
 /**
  * responsive for larger than 550px screen
  */
-
+ @media (max-height: 650px) {
+  .contact{
+    width: 50%;
+    padding: 15px 0px;
+  }
+  .contact-heading{
+    margin: 20px 0px;
+    margin-bottom: 50px;
+  }
+  .contact-heading h1{
+    font-size: 2.1rem;
+    
+  }
+  .contact form{
+    width: 400px;
+  }
+  .contact form input,.contact form textarea{
+    width: 90%;
+    height: 40px;
+    margin: 5px 0px;
+    padding: 10px;
+    background-color: #eaeaea;
+    color: #1e1e1e;
+    border-radius: 5px;
+  }
+  .contact form textarea{
+    height: 120px;
+  }
+  .contact-btn{
+    margin-top: 40px;
+  }
+  #contact h2{
+    margin-top: 30px;
+  }
+  #contact p span{
+    color: var(--rajah);
+  }
+  /**
+   * Für Contact.html
+   */
+   #contacts h2{
+    margin-top: 30px;
+    color: white;
+  }
+  #contacts p{
+    color: white;
+  }
+  #contacts p span{
+    color: var(--rajah);
+  }
+}
+ @media (max-width: 750px){
+  .demo a {
+    display: none;
+  }
+}
+@media (max-width: 768px) {
+  .hero-banner{
+    display: none;
+  }
+  .hero .container {
+    align-items: center;
+  }
+  .hero-content{
+    align-items: center;
+    justify-content: center;
+    margin-left: 50%;
+    margin-top: 3rem;
+    width: 100%;
+  }
+}
+@media (min-width: 350px){
+  .contact form{
+    width: 300px;
+  }
+}
+@media (min-width: 430px){
+  .contact form{
+    width: 400px;
+  }
+}
 @media (min-width: 550px) {
 
   /**
@@ -725,6 +804,20 @@ section h1 {
     gap: 5px;
     margin-inline-start: auto;
   }
+  .hero .container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+  }
+  .contact{
+    width: 100%;
+    padding: 20px 0px;
+    align-self: center;
+  }
+  .contact form{
+    width: 400px;
+  }
+
 
 
 
@@ -770,7 +863,6 @@ section h1 {
 /**
  * responsive for larger than 768px screen
  */
-
 @media (min-width: 768px) {
 
   /**
@@ -799,7 +891,6 @@ section h1 {
     align-items: center;
     gap: 30px;
   }
-
 
 
   /**
@@ -1001,8 +1092,60 @@ section h1 {
 
 }
 
-@media (min-height: 900px) {
+@media (max-height: 990px) {
   .demo a {
     bottom: 220px;
   }
+}
+@media (max-width: 549px) {
+  .hero .container {
+    display: grid;
+    grid-template-columns: 0.6fr 0.6fr;
+    align-items: center;
+  }
+  .hero-content h2{
+    font-size: 35px;
+    margin-top: 2rem;
+  }
+
+}
+@media (max-width: 490px) {
+  .hero .container {
+    grid-template-columns: 1fr 1fr;
+  }
+  .hero-content h2{
+    font-size: 30px;
+    margin-top: 0.5rem;
+  }
+
+}
+@media (max-width: 490px) {
+  .hero .container {
+    grid-template-columns: 1fr 1fr;
+    margin-right: 6rem;
+  }
+  .hero-content h2{
+    font-size: 27px;
+    margin-top: 0.5rem;
+    width: 170%;
+  }
+  .hero-content .btn{
+    padding: 12px 15px;
+  }
+
+}
+@media (max-width: 400px) {
+  .hero .container {
+    grid-template-columns: 1fr 1fr;
+    margin-right: 6rem;
+  }
+  .hero-content h2{
+    font-size: 27px;
+    margin-top: 0.5rem;
+    width: 170%;
+  }
+  .hero-content .btn{
+    padding: 8px 10px;
+  }
+
 }
